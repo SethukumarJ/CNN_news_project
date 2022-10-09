@@ -1,0 +1,435 @@
+/* =================CSS-RESET=================*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ==========================BASIC STYLE============================== */
+
+body{
+	font-size: 16px;
+	color: black;
+	font-weight: 300;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ 
+/* ==========================HEADER STYLE============================== */
+.page-header{
+	width: vw;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.991);
+}
+.page-header-wrapper{
+    width: 1250px;
+	margin: 0 auto;
+}
+
+.page-header-wrapper{
+	color: white;
+	font-weight: 300;
+	display: flex;
+	height: 40px;
+	align-items: center;
+	justify-content: space-between;
+}
+.page-header .left-nav,.page-header .right-nav{
+	display: flex;
+	align-items: center;
+}
+.left-nav{
+	width: 50%;
+	
+}
+.logo img{
+	height: 40px;
+	width: auto;
+	padding-left: 15px;
+}
+.page-header a{
+	text-decoration: none;
+	color:white;
+}
+.page-header a:hover{
+	color: gray;
+}
+.left-nav ul{
+    width: 60%;
+	display: flex;
+	color: white;
+	justify-content: space-around;
+}
+.right-nav{
+	width: 15%;
+   justify-content: space-between;
+}
+.right-nav button{
+  background-color: transparent;
+  border: 2px solid white;
+  text-align: center;
+  padding:5px 10px ;
+  border-radius: 10px;
+}
+.right-nav button:hover{
+	position :relative;
+	top: 2px;
+}
+.right-nav button a{
+	font-weight: bold;
+}
+
+/* ==========================MAIN BODY STYLE============================== */
+/* First row */
+.wrapper{
+	width: 1150px;
+	margin: 0 auto;
+}
+
+.first-row{
+	margin-top: 30px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+	height: 500px;
+	width: 100%;
+}
+.first-col{
+	display: flex;
+	flex-direction: column;
+	
+     width: 40%;
+}
+.second-col{
+	display: flex;
+	flex-direction: column;
+	
+	width: 30%;
+}
+.frequent{
+	width:27%;
+	flex-direction: column;
+	align-items: center;
+	
+}
+.heading{
+	width: 100%;
+	text-align: center;
+}
+.first-col h1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 53px;
+	font-weight: 500;
+	color: rgb(34, 33, 33);
+	letter-spacing: 1px;
+}
+.first-col h3{
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+p,.medianimagedivision h2{
+	border-top-style:solid ;
+	border-top-color: lightgray;
+	border-top-width: 1px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/* FIRST-ROW-SECOND COLUMN */
+
+.article-2block,.article-3block{
+	padding-top: 20px;
+	width: 65%;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 400;
+	background-color: rgb(209, 208, 208);
+	height: 100px;
+	position:relative;
+	bottom: 30px;
+	box-sizing: border-box;
+}
+.topblock,.bottomblock{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* FIRST-ROW-Third COLUMN(frequent) */
+
+h3 {
+	font-size: medium;
+	font-weight: bold;
+	color: slategrey;
+	margin-bottom: 10px;
+}
+.last-row .second-col h3,.last-row .third-col h2,.featured-section h3{
+	margin: 7px 0;
+}
+h2{
+	margin: 7px 0;
+	font-family: inherit;
+	font-size: 22px;
+	font-weight: 300;
+}
+/* LAST-ROW FIRST COLUMN */
+ 
+.last-row{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	
+}
+.last-row .first-col{
+	width: 27%;
+	
+}
+.last-row .frequent{
+	width: 100%;
+}
+.freqent2{
+	width: 100%;
+}
+.smallimagedivision{
+	width: 100%;
+	display: flex;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	
+}
+ .smallimagedivision img{
+	width: 20%;
+}
+.smallimagedivision p{
+	padding-left: 25px;
+}
+
+/* LAST ROW SECOND COLUMN */
+strong{
+	font-weight: bold;
+}
+
+.last-row .second-col{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+
+.last-row .second-col .image-block{
+	background: url(../images/articles/article-6.png);
+	background-size: cover;
+	height: 300px;
+}
+
+.last-row .second-col .image-block2{
+	background: url(../images/articles/article-15.png);
+	background-size: cover;
+	height: 300px;
+}
+.medianimagedivision{
+	display: flex;
+	width:100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.medianimagedivision img{
+	width: 35%;
+}
+.text-block{
+	
+	height: 80px;
+	background-color: rgba(209, 208, 208,.8);
+	width: 100%;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 33px;
+	font-weight: 250;
+	color: rgb(81, 80, 80);
+}
+.image-block,.image-block2{
+   display: flex;
+   
+   align-items: flex-end;
+}
+
+.medianimagedivision h2{
+	padding-left: 20px;
+}
+
+.last-row .second-col .one{
+	margin-bottom: 40px;
+}
+.section-heading{
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+}
+.section-heading h1{
+	font-size:35px;
+	color: black;
+}
+.section-heading .grey-container{
+	height: 5px;
+	background-color: rgb(74, 74, 74);
+	width: 75%;
+}
+
+/* LAST ROW THIRD COLUMN */
+
+.last-row .third-col{
+	width: 27%;
+}
+.last-row .third-col .one{
+	margin-bottom: 90px;
+}
+
+/* FEATURED SECTION */
+.featured-section{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.featured-section .frequent{
+	width: 31%;
+	
+}
+.featured-section .last{
+	margin-right: 400px;
+}
+
+/* TOP FOOTER SECTION */
+.top-footer{
+	padding-top: 12px;
+	padding-bottom: 30px;
+}
+.top-footer .section-heading h1{
+	font-size:35px;
+	color: white;
+}
+.top-footer .section-heading .red-container{
+	height: 5px;
+	background-color: rgb(181, 11, 11);
+	width: 70%;
+	margin-left: 10px;
+}
+
+.top-footer{
+	background-color: rgb(19, 18, 18);
+}
+.top-footer-images-container{
+	display: flex;
+	justify-content: space-between;
+}
+.top-footer-images-container img{
+	width: 73%;
+}
+.top-footer-images-container .sideImageContainer{
+	width: 25%;
+}
+.sideImageContainer img{
+	width: 100%;
+}
+.sideImageContainer .one{
+	margin-bottom: 30px;
+}
+.sideImageContainer h2{
+	color: white;
+}
+
+/* ==========================FOOTER STYLE============================== */
+
+.page-footer{
+	background-color: rgb(10, 9, 9);
+	padding-bottom: 40px;
+}
+.footer-col{
+	width:15%;
+}
+
+.footer-column-block{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.footer-col{
+	color: rgb(196, 181, 181);
+	font-size: 15px;
+	font-weight: 150;
+	line-height: 25px;
+}
+.footer-col li:hover{
+	color: gray;
+}
+.footer-col h2{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.footer-header{
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	font-size: 17px;
+	font-weight: 150;
+	height: 60px;
+	align-items: center;
+}
+
+.textfield input{
+	width: 300px;
+	height: 30px;
+	background-color: rgb(22, 20, 20);
+
+}
+.textfield{
+	display: flex;
+	align-items: center;
+	height: 30px;
+}
+.textfield i{
+	position: relative;
+	right: 30px;
+	color: rgb(149, 143, 143);
+}
+ ::placeholder{
+	color: rgb(149, 143, 143);
+	font-size: 17px;
+	font-weight: 400;
+}
